@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary-subtle">
+      <div class="container">
+        <a class="navbar-brand" href="#">A Day In My Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Calender</a>
+            <a class="nav-link" href="#">About</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row container text-center pt-4 ms-5">
+      <div class="col-6">Welcome Adventure</div>
+      <div class="col-6">
+        <p><span id="currentdate"></span></p>
+        <p><span id="currenttime"></span></p>
+      </div>
+    </div>
+    <div id="demo" class="carousel slide pt-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.ourescapeclause.com/wp-content/uploads/2021/12/Iceland_Snaefellsnes-347-768x512.jpg" alt="Iceland_Snaefellsnes" class="d-block position-absolute top-50 start-50 translate-middle" style="width: 75%" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://lp-cms-production.imgix.net/2021-04/shutterstockRF_571847170.jpg?auto=format&w=1440&h=810&fit=crop&q=75" alt="Iceland" class="d-block position-absolute top-50 start-50 translate-middle" style="width: 75%" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.britannica.com/06/171306-050-C88DD752/Aurora-borealis-peninsula-Snaefellsnes-Iceland-March-2013.jpg" alt="Aurora" class="d-block position-absolute top-50 start-50 translate-middle" style="width: 75%" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <section>
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card-container">
+              <div class="card">
+                <img src="https://cdn.britannica.com/08/190908-131-A6B6D47D/Volleyball-match.jpg" alt="volly" />
+                <h3 style="font-size: 20px; text-align: center"><b>Volleyball-match</b></h3>
+                <p style="text-align: center">My hobby is playing volly</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-container">
+              <div class="card">
+                <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/cianjurtoday/2022/07/Mengintip-Tanggung-Jawab-Tugas-dan-Skill-yang-Harus-Dimiliki-Programmer.png" alt="sport" />
+                <h3 style="font-size: 20px; text-align: center"><b>Proggramer</b></h3>
+                <p style="text-align: center">Becoming a Programmer is my dream to be able to create games and applications to help humans</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-container">
+              <div class="card">
+                <img src="https://asset-a.grid.id/crop/0x0:0x0/945x630/photo/2022/09/23/coverjpg-20220923015242.jpg" alt="cars" />
+                <h3 style="font-size: 20px; text-align: center"><b>A Dream</b></h3>
+                <p style="text-align: center">My hope is that I can have a successful career and open a business to create jobs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-secondary-subtle text-black text-center pb-3">
+      <p>@Created by <a href="https://www.instagram.com/hamam_priyatmoko81/?hl=id" class="fw-bold text-bg-light">Hamam Priyatmoko</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="ucp1.js"></script>
+  </body>
+</html>

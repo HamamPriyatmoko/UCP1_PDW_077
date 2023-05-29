@@ -1,17 +1,11 @@
 function updateDateTime() {
-  var currentdateElement = document.getElementById('date-time');
-  var currenttimeElement = document.getElementById('date-time');
-
-  var now = new Date();
-
-  var daysofweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-  var date = now.toLocaleDateString();
-  var time = now.toLocaleTimeString();
-
-  dateTimeElement.innerHTML = 'Tanggal: ' + date + ' - Waktu: ' + time;
+  var currentDateElement = document.getElementById('currentdate');
+  var currentTimeElement = document.getElementById('currenttime');
+  var currentDate = new Date();
+  var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  currentDateElement.innerText = currentDate.toLocaleDateString('en-US', dateOptions);
+  var currentTime = currentDate.toLocaleTimeString('en-US');
+  currentTimeElement.innerText = currentTime;
 }
-
-updateDateTime();
-
+// Update date and time every second
 setInterval(updateDateTime, 1000);
